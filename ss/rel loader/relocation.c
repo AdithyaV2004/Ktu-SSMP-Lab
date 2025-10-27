@@ -2,11 +2,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-int hex_to_dec(char hex[]) {
-    int val;
-    sscanf(hex, "%x", &val);
-    return val;
-}
 int main() {
     {
     char line[200], recordType, progaddr_str[10];
