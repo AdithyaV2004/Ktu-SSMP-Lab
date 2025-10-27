@@ -71,6 +71,7 @@ void main() {
         fscanf(fp1, "%s%s%s%s", locctr, label, opcode, operand);
     }
     // --- END RECORD ---
+    fprintf(fp5,"\t\t%s\t%s\n",opcode,start);
     printf("\nE^00%s\n", start);
     fclose(fp1);
     fclose(fp2);
