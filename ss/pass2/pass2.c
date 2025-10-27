@@ -27,7 +27,7 @@ void main(){
             if(strcmp(opcode,code)==0){ 
                 rewind(fp4); 
                 fscanf(fp4,"%s%s",symbol,symbol_value); 
-                while(!feof(fp3)){ 
+                while(!feof(fp4)){ 
                     if(strcmp(symbol,operand)==0){ 
                         printf("%s%s^",value,symbol_value); 
                         break; 
