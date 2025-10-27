@@ -51,9 +51,10 @@ void main() {
             }
             else if (strcmp(opcode, "BYTE") == 0) {
                 int byte_len = strlen(operand);
-                for (int i = 2; i < byte_len - 1; i++)
-                    printf("%X", operand[i]);
+                for (int i = 2; i < byte_len - 1; i++){
+                    printf("%X", operand[i]);                    
                     nol+=1;
+                }
                 printf("^");
             }
         }
