@@ -24,8 +24,8 @@ void main() {
     printf("T^00%s^", start);
     fscanf(fp1, "%s%s%s%s", locctr, label, opcode, operand);
     while (strcmp(opcode, "END") != 0) {
-        if(nol==9){
-            printf("\nT^00%s",locctr);
+        if(nol>=8){
+            printf("\nT^00%s^",locctr);
             nol=0;
         }        
         int found = 0;
